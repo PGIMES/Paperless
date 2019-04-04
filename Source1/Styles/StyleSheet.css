@@ -1,0 +1,79 @@
+﻿body {
+	font-family: 宋体;
+	font-size: 12px;
+}
+
+A {
+	color: Black;
+	text-decoration: none;
+}
+
+A:hover {
+	text-decoration: underline;
+}
+
+#container {
+	margin: 0 auto;
+	width: 900px;
+}
+
+.GridViewCssClass {
+	line-height: 1.2em;
+	border: 1px solid black;
+}
+
+.GridViewCssClass Caption {
+	font-size: 1.3em;
+	line-height: 1.2em;
+	 color:#FF6600;
+}
+
+.GridViewCssClass TH, .GridViewCssClass TD {
+	line-height: 1.2em;
+	height: 1.2em;
+	padding: 3px 5px;
+	border: 1px solid black;
+}
+
+.GridViewCssClass TH {
+	background-color: #CCCCCC;
+}
+
+
+
+.GridViewCssClass TR {
+	
+}
+
+.GridViewCssClass TR.AlternatingRowStyle {
+	background-color: #DDDDDD;
+}
+
+.GridViewCssClass TR:hover {
+	background-color: #FFFFFF;
+}
+
+.PointText {
+	color: Red;
+	
+}
+
+.GridViewCssClass TD.TextRight {
+	text-align: right;
+}
+
+.GridViewCssClass TD.TextLeft {
+	text-align: left;
+}
+
+.GridViewCssClass TD.TextCenter {
+	text-align: center;
+}
+
+.GridViewCssClass TD INPUT.NumberInput {
+	text-align: right;
+	font-size: 1em;
+	border: 1px solid black;
+	margin: -2px 0px -5px 0px;
+
+}

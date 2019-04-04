@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+
+  <menuItem title="我的领料车"  description=""  url="~/My_Car.aspx"  >
+
+  </menuItem >
+
+
+
+  
+  <menuItem url="~/LL_Query.aspx" title="领料"  description="" >
+
+ 
+      
+
+  </menuItem >
+
+  <menuItem url="~/LL_Record.aspx" title="我的领料记录"  description="" >
+
+
+   
+
+  </menuItem >
+
+  <menuItem url="~/LL_Confirm.aspx" title="领料人确认"  description="" >
+
+    
+
+  
+  </menuItem >
+  
+
+  <menuItem url="~/WH_Confirm.aspx" title="仓库查询"  description="" >
+  
+   </menuItem>
+  
+  
+
+  <menuItem url="~/TL_Query.aspx" title="退料"  description="">
+
+  </menuItem >
+
+  <menuItem url="~/TL_Record.aspx" title="我的退料记录"  description="">
+
+  </menuItem >
+  <menuItem url="" title="报表"  description="">
+    <!--<menuItem url="~/Report/Record_Query.aspx" title="领料记录查询"  description=""/>-->
+    <menuItem url="http://172.16.5.26:8010/daoju/Daoju_list.aspx" title="刀具清单查询界面"  description=""/>
+  </menuItem >
+
+
+	
+ 
+</menu>

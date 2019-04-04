@@ -1,0 +1,1424 @@
+
+
+
+body
+{
+	SCROLLBAR-FACE-COLOR: #ffffff; 
+	FONT-SIZE: 75%; 
+	SCROLLBAR-HIGHLIGHT-COLOR: B9C1AA; 
+	SCROLLBAR-SHADOW-COLOR: B9C1AA; 
+	SCROLLBAR-3DLIGHT-COLOR: #ffffff; 
+	SCROLLBAR-ARROW-COLOR: B9C1AA; 
+	SCROLLBAR-TRACK-COLOR: #ffffff; 
+	SCROLLBAR-DARKSHADOW-COLOR: #ffffff;
+	margin: 0px;
+	padding: 0px;
+}
+form 
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+td
+{
+	font-size:10pt;
+}
+.td1
+{
+	font-size:19pt;
+	margin-top:-20px;
+}
+
+th 
+{ 
+    TEXT-INDENT: 6pt;
+	background-color:F2F2F2; 
+	color:#424200;
+	height:28px;
+	font-size:9pt;
+}
+table .tb
+{
+    TEXT-INDENT: 6pt;
+	color:#424200;
+	margin: 0px;
+	padding: 0px;
+	height:20px;
+	BACKGROUND-COLOR: #ffffff;
+	cursor:default;
+}
+table .tb_Over
+{
+    TEXT-INDENT: 6pt;
+    color:#424200;
+	margin: 0px;
+	padding: 0px;
+	height:20px;
+	BACKGROUND-COLOR: #EAE8E6;
+	cursor:default;
+}
+
+table .tb_Edit
+{
+	margin: 0px;
+	padding: 0px;
+	cursor:default;
+}
+table .tb_Edit_Over
+{
+	margin: 0px;
+	padding: 0px;
+	cursor:default;
+}
+hr 
+{
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #666666;
+	border-bottom-color: #FFFFFF;
+	height: 2px;
+	margin: 0px;
+	padding: 0px;
+}
+
+A:link 
+{ 
+	TEXT-DECORATION: none;  color: #5F506D
+}
+A:visited 
+{ 
+	COLOR: #5F506D; TEXT-DECORATION: none; 
+}
+A:hover 
+{ 
+	COLOR: #5F506D; TEXT-DECORATION: underline overline; 
+}
+
+.btn_Xp_Bg1
+{
+	font-size: 12px;
+	width: 60px;
+	height: 20px;
+	background-image: url(../Images/Share/Btn/btn_xp_bg1.gif);
+	border: none;
+	padding-top: 3px;
+}
+.btn_Xp_Bg1_Over
+{
+	font-size: 12px;
+	width: 60px;
+	height: 20px;
+	background-image: url(../Images/Share/Btn/btn_xp_bg1_Over.gif);
+	border: none;
+	padding-top: 3px;
+}
+.btn_Xp_Bg2
+{
+	font-size: 12px;
+	width: 80px;
+	height: 20px;
+	background-image: url(../Images/Share/Btn/btn_xp_bg2.gif);
+	border: none;
+	padding-top: 3px;
+}
+.btn_Xp_Bg2_Over
+{
+	font-size: 12px;
+	width: 80px;
+	height: 20px;
+	background-image: url(../Images/Share/Btn/btn_xp_bg2_Over.gif);
+	border: none;
+	padding-top: 3px;
+}
+
+.txt
+{ 
+    border:1px solid #C0C0C0; text-align:left; background-color:#ffffff
+} 
+.td_edit
+{
+	TEXT-INDENT: 6pt;
+	font-size: 10pt;
+	color: #424200; 
+}
+.font_Title
+{ 
+    font-size: 11pt;color: #4D2600; FILTER: dropshadow(color=#FBFCFF,offx=1,offy=1); font-weight:bold;
+} 
+.font_td_Title
+{ 
+    font-size: 10pt;color: #424200; font-weight: bold; 
+}
+.font_td_Content
+{ 
+    font-size: 10pt;color: #424200; 
+}
+.font_td_Content1
+{ 
+    font-size: 10pt;color: #FF6600; 
+}
+.txt_Over
+{ 
+	border:1px solid #6699CC; background-color:F2F8FE 
+}
+
+.top_table
+{
+	BORDER-RIGHT: #66775B 1px dotted; BORDER-TOP: #66775B 1px dotted; BORDER-LEFT: #66775B 1px dotted; BORDER-BOTTOM: #66775B 1px dotted;
+}
+.top_font
+{  
+     FILTER: dropshadow(color=#FBFCFF,offx=1,offy=1);font-size: 16px; font-weight: bold; color: #2e5fba; letter-spacing: 3px
+}
+.main_th_font
+{  
+	font-size: 10pt;color: #FFFFFF; font-weight: bold;  letter-spacing: 2px
+}
+.main_tr_font
+{  
+	font-size: 10pt;color: #000000; letter-spacing: 2px
+}
+.main_tr_base_font
+{  
+	font-size: 10pt;color: #000000;letter-spacing: 2px
+}
+
+.font_Shadow
+{
+	font-size: 10pt;color: #fffff;
+}
+.table_Shadow
+{
+	FILTER: dropshadow(color=#EDEDF8,offx=3.3,offy=3.3,positive=1);
+	
+}
+.MyCheckBox
+{
+	behavior:url(../../htc/checkbox.htc);
+}
+.htc_btn
+{
+	behavior:url(../../htc/btn.htc);
+}
+.htc_btn1
+{
+	behavior:url(../../htc/btn1.htc);
+}
+.htc_txt
+{
+  behavior:url(../../htc/txt.htc);
+  height:16px;
+}
+table .htc_tb
+{
+    behavior:url(../../htc/tb.htc);
+}
+table .htc_tb_edit
+{
+    behavior:url(../../htc/tb_edit.htc);
+}
+
+/* ================================
+    CSS STYLES FOR ASUSTeK PORTAL 
+    v1.0, 04/2002
+   ================================
+*/   
+			
+.Header
+{
+	background-color: #232850;
+	background-image: url(/LUEqm/images/defaultLogo.gif);
+	height: 70px;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}	
+		
+.m1, .m1 td
+{ font-size: xx-small; }
+
+.Tabs
+{
+	height: 51;
+	visibility: visible;
+	padding-right: 10px;
+	background-color: transparent;
+ }
+ 
+/* text style for the selected tab */
+.SelectedTab
+{
+	font-weight: bold;
+	font-size: 12px;
+	color: #000;
+    text-decoration:none;
+    BACKGROUND-REPEAT:repeat-x;
+    BORDER-BOTTOM: #F1F1F1 1px solid;
+	font-family: Verdana, Helvetica, sans-serif;	
+    vertical-align: baseline;
+}
+
+/* text style for the unselected tabs */
+.OtherTabs {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #232850; 
+    text-decoration:none;
+    vertical-align: baseline;
+    BORDER-BOTTOM: #83A3CB 1px solid;
+    font-weight:normal  /* bold */
+    /*BORDER-BOTTOM: silver 1px solid; */
+}
+
+/* hyperlink styles of the unselected tabs */
+A.OtherTabs:link    {
+    text-decoration:    none;
+    color:#232850; 
+}
+
+A.OtherTabs:visited {
+    text-decoration:    none;
+    color:#232850; 
+}
+
+A.OtherTabs:active  {
+    text-decoration:    none;
+    color:#232850;
+}
+
+A.OtherTabs:hover   {
+    text-decoration:    underline;
+    color:white;
+    color: Red;
+} 
+
+ .SiteMenu
+ {
+	height: 19;
+	visibility: visible;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-right: 12px;
+ }
+ 
+ .menuSeparator, .menuSeparator a 
+{ 
+	font-family: verdana, geneva, helvetica;
+	color: #FFF;
+}
+
+.menuItem, .menuItem a 
+{
+	font-family: verdana, geneva, helvetica;
+	color: #FC6; 
+}
+
+
+A:hover.menuItem
+{
+	color: #FC6; 
+}
+
+.topBorder
+{
+	background-position: left top;
+	background-image: url(/LUEqm/images/topBorder.gif);
+	width: 100%;
+	background-repeat: repeat-x;
+	height: 7px;
+	background-color: white;
+	z-index: 0;
+}
+
+Body
+{
+	font-family: arial, helvetica;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	margin: 0px;
+	background-color: white;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom: 0px;
+	margin-top: 0px
+}
+
+
+/* PAGE BACKGROUND */
+/* background color for the header at the top of the page  */
+/* put your banner image here */
+.Banner
+{
+	background-position: left bottom;
+	background-image: url(/LUEqm/images/maillogo.gif);
+	background-repeat: no-repeat;
+	background-color: #8199B8;
+	height:80px;
+	width: 100%;
+	z-index: 100;
+}
+
+.SiteTitle {
+    font-family: Verdana Bold, 'Trebuchet MS', Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    /*color:#cccc99;
+    /*color: #8B46D7;  */
+	position: absolute;
+	top: 40px;
+	left: 60px;
+	height: 35px;
+	width: 300px;
+    color: White;
+    text-align: left;
+    vertical-align: baseline;
+}
+
+.CompanyLogo
+{
+	background-position: right top;
+	left: 0px;
+	width: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 14px;
+	height: 35px;
+	/*background-image: url(../images/Asuslogo1.gif);*/
+}
+
+.BannerMenu
+{
+	left: 0px;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	height: 20px;
+	text-align: right;
+	vertical-align: baseline;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold
+}
+
+.ControlTitle
+{
+	FONT-SIZE: 14pt;
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color:#525456;
+	color: gray;
+	font-weight:bold;
+	background-color: transparent;
+	height: 35px;
+    BORDER-BOTTOM: white 0px solid;
+    border-left: solid 0px white;
+    padding-right: 10px;
+    padding-left: 10px;    
+    vertical-align:baseline;
+}
+
+.TitleSpacing
+{
+	height: 0px;
+}
+
+.QuerySpan
+{
+	height: 3px;
+}
+
+/* Table Title */
+.TableTitleLeft
+{
+	color: white;
+	background-color: white;
+    width: 9px;
+    height: 20px;
+    BORDER-BOTTOM: solid 0px gray;
+    border-left: solid 2px white;
+	background-image: url(/LUEqm/images/TitleLeft.gif);
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+
+.TableTitleRight
+{
+	color: white;
+	background-color: white;
+	width: 8px;
+	background-image: url(/LUEqm/images/TitleRight.gif);
+}
+
+.TableTitle
+{
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color:#525456;
+	color: gray;
+	font-weight:bold;
+	background-color: transparent;
+    padding-left: 3px;
+    padding-right: 10px;
+	background-image: url(/LUEqm/images/TitleBG.gif);
+	background-repeat: repeat-x;
+	background-position: top left;
+}
+
+/* Data Row */
+.DataRow
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8px;
+    font-weight: normal;
+    line-height:normal;
+    height: 10px;
+    behavior:url(tools/DbGridItem.htc)
+}
+
+.DataRowAlt
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8px;
+    font-weight: normal;
+    line-height:normal;
+    background-color: #F0F0F0;
+    background-color: #EDF3FE;
+    height: 10px;
+    BORDER-BOTTOM: #ccff99 2px solid;
+    behavior:url(tools/DbGridItem.htc)
+}
+
+.DataRowOver
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height:normal;
+    height: 24px;
+	background-color: #C2C5C8;
+	cursor: hand;
+}
+
+
+/******************/
+/* Not Firmed     */
+
+.ContentBody 
+{
+ background-color: white;
+}
+
+.ContentImage 
+{
+ background-color: white; 
+}
+
+.bucketHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+
+/* background/border colors for the selected tab */
+.TabBg {
+    background-color: white;
+    border-color: white;
+}
+
+/* background/border colors for the unselected tabs */
+.OtherTabsBg {
+    background-color: dimgray;
+    border-color: black;
+}
+    
+/* text style for the site links (at extreme top-right of header) */
+.SiteLink {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold
+}   
+
+/* hyperlink style for the site links */
+A.SiteLink:link {
+    text-decoration:    none;
+    color:black;
+}
+
+A.SiteLink:visited  {
+    text-decoration:    none;
+    color:black;
+}
+
+A.SiteLink:active   {
+    text-decoration:    none;
+    /*color:#eeeeee;*/
+}
+
+A.SiteLink:hover    {
+    text-decoration:    underline;
+    color:Red;
+}
+
+/* style for separator between site links */
+.Accent
+{
+    color: red;
+    font-weight:    bold;
+}
+
+.fontSize1 {
+	FONT-SIZE: 65%; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: silver;
+}
+
+A.fontSize1:link {
+    text-decoration:    underline;
+    color:#0066cc;
+}
+
+A.fontSize1:hover    {
+    text-decoration:    underline;
+    color:#0066cc;
+}
+
+A.fontSize1:visited  {
+    text-decoration:    underline;
+    color:#0066cc;
+}
+
+A.fontSize1:active   {
+    text-decoration:    none;
+    /*color:#eeeeee;*/
+}
+
+
+/* MODULE-SPECIFIC */
+/* text style for reading messages in Discussion */    
+.Message    {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    font-size: 11px;
+    background-color: #eeeeee
+}   
+
+/* style of item titles by Announcements and events */
+.ItemTitle    {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  11px;
+    font-weight:    bold;
+    color: darkred;
+}
+
+
+
+/* GENERAL */
+/* style for module titles */
+.Head   {
+    font-family:  Verdana, 'Trebuchet MS', Helvetica, sans-serif;
+    font-size:  20px;
+    font-weight:    bold;
+    color: #666644;
+}
+
+/* style of item titles on edit and admin pages */
+.SubHead    {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  14px;
+    font-weight:    bold;
+    color: black;
+}
+
+/* module title style used instead of Head for compact rendering by QuickLinks and Signin modules */
+.SubSubHead {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  11px;
+    font-weight:    bold;
+    color: black;
+}
+
+/* text style used for most text rendered by modules */
+.Normal
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height:normal
+}
+
+.NormalWrap
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height:normal
+}
+
+
+.Dimm
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    color: Silver;
+    line-height: normal
+}
+
+/* text style used for textboxes in the admin and edit pages, for Nav compatibility */
+.NormalTextBox
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.NormalTextBoxRed
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    color: red
+}
+
+
+.NormalRed
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: red
+}
+
+.NormalBold
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold
+}
+
+/* text style for buttons and link buttons used in the portal admin pages */
+.CommandButton     {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+}
+    
+/* hyperlink style for buttons and link buttons used in the portal admin pages */
+A.CommandButton:link {
+    text-decoration:    underline;
+    color: darkred;
+}
+
+A.CommandButton:visited  {
+    text-decoration:    underline;
+    color: darkred;
+}
+
+A.CommandButton:active   {
+    text-decoration:    underline;
+    color: darkred;
+}
+
+A.CommandButton:hover    {
+    text-decoration:    underline;
+    color: red;
+}
+    
+
+
+
+/* GENERIC */
+H1  {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  20px;
+    font-weight:    normal;
+    color: #666644;
+}
+
+H2  {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  18px;
+    font-weight:    normal;
+    color: #666644;
+}
+
+H3  {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  11px;
+    font-weight:    normal;
+    color: darkred;
+}
+
+H4  {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  11px;
+    font-weight:    normal;
+    color: darkred;
+}
+
+H5, DT  {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  11px;
+    font-weight:    bold;
+    color: darkred;
+}
+
+H6  {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  11px;
+    font-weight:    bold;
+    color: darkred;
+}
+
+TFOOT, THEAD    {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  11px;
+    color: darkred;
+}
+
+TH  {
+    vertical-align: baseline;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  11px;
+    font-weight:    bold;
+    color: darkred;
+}
+
+SMALL   {
+    font-size:  8px;
+}
+
+BIG {
+    font-size:  14px;
+}
+
+BLOCKQUOTE, PRE {
+    font-family:    Lucida Console, monospace;
+}
+
+
+UL LI   {
+    list-style-type:    square ;
+}
+
+UL LI LI    {
+    list-style-type:    disc;
+}
+
+UL LI LI LI {
+    list-style-type:    circle;
+}
+
+OL LI   {
+    list-style-type:    decimal;
+}
+
+OL OL LI    {
+    list-style-type:    lower-alpha;
+}
+
+OL OL OL LI {
+    list-style-type:    lower-roman;
+}
+
+HR {
+    color: dimgrey;
+    height:1pt;
+    text-align:left
+}
+
+.DataQueryTable 
+{
+ border: 1px;
+ border-color: #000000;  
+}
+
+/* Table Header */
+TH.SortOther, TD.SortOther, SortOther {
+	background-color: #9ba0a1;
+    BORDER-BOTTOM: #9ba0a1 2px;
+    BORDER-LEFT: #9ba0a1 2px;
+    BORDER-RIGHT: #9ba0a1 2px;
+    BORDER-TOP: #9ba0a1 2px;
+}
+
+TH.Sortactive, TD.Sortactive, SortActive {
+    font-family: Verdana,sans-serif;
+	background-color: #9ba0a1;
+    BORDER-BOTTOM: #ccff99 2px outset;
+    BORDER-LEFT: #c9cccd 2px outset;
+    BORDER-RIGHT: #c9cccd 2px outset;
+    BORDER-TOP: #003366 2px outset;
+    COLOR: #ccff99;
+    COLOR: Black;
+    CURSOR: hand;
+    FONT-SIZE: 90%;
+    FONT-WEIGHT: bold;
+	background-image: url(/LUEqm/images/sortactiveBg5.gif);
+	background-repeat: repeat-x;
+    BORDER-BOTTOM: #003366 1px outset;
+    BORDER-TOP: #c9cccd 2px outset;
+    BORDER-LEFT: #c9cccd 2px outset; 
+    BORDER-RIGHT: #ffffcc 1px outset;
+}
+
+TH.Sortactive A, TD.Sortactive A, Sortactive A {
+    font-family: Verdana,sans-serif;
+	COLOR: #ccff99; CURSOR: hand; 
+	FONT-SIZE: 90%; FONT-WEIGHT: bold;
+    COLOR: Black;
+}
+
+TH.Sortactive A:hover, TD.Sortactive A:hover, Sortactive A:hover {
+    font-family: Verdana,sans-serif;
+	TEXT-DECORATION: underline; COLOR: #ccff99; CURSOR: hand; FONT-SIZE: 90%; FONT-WEIGHT: bold;
+    COLOR: Black;
+}
+
+TH.Sortactive A:visited, TD.Sortactive A:visited, Sortactive A:visited {
+    font-family: Verdana,sans-serif;
+	COLOR: #ccff99; CURSOR: hand; FONT-SIZE: 90%; FONT-WEIGHT: bold;
+    COLOR: Black;
+}
+
+TH.SortInactive, TD.SortInactive, .SortInactive {
+    font-family: Verdana,sans-serif;
+	BACKGROUND-COLOR: #003366; 
+	background-color:#7f8587;
+    BORDER-BOTTOM: #003366 1px outset;
+    BORDER-TOP: #c9cccd 2px outset;
+    BORDER-LEFT: #c9cccd 2px outset; 
+    BORDER-RIGHT: #ffffcc 1px outset;
+    color: black;
+    CURSOR: hand; 
+    FONT-SIZE: 90%; FONT-WEIGHT: Normal;
+    font-size:  12px;
+    height: 25px;
+    text-align: center;
+	background-image: url(/LUEqm/images/sortinactiveBg5.gif);
+	background-repeat: repeat-x;
+}
+
+TH.SortInactive A, TD.SortInactive A, SortInactive A {
+	COLOR: black; CURSOR: hand;
+    FONT-SIZE: 90%; FONT-WEIGHT: Normal;
+    font-size:  12px;
+}
+TH.SortInactive A:hover, TD.SortInactive A:hover, SortInactive A:hover {
+	TEXT-DECORATION: underline; COLOR: black; CURSOR: hand; 
+    FONT-SIZE: 90%; FONT-WEIGHT: Normal;
+}
+TH.SortInactive A:visited, TD.SortInactive A:visited, SortInactive A:visited {
+	COLOR: black; CURSOR: hand;
+    FONT-SIZE: 90%; FONT-WEIGHT: Normal;
+}
+/* /Table Header */
+
+.Legend {
+  background-color:#Dddddd
+}
+
+.CopyRight 
+{
+  font-family: Verdana,sans-serif;
+  font-size: 7pt;
+  font-weight: bold;
+  COLOR: #ffffff
+}
+
+.xslHeaderBG {
+  background-color:#336699;
+  COLOR: #ffffff
+}
+
+.xslHeader {
+  font-family: Verdana,sans-serif;
+  BACKGROUND-COLOR:#003366;
+  COLOR: #ffffff
+}
+
+.xslTitle    {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  11px;
+    font-weight:    bold;
+    color: white;
+}
+
+TD.GrayTop
+{
+    font-family: Verdana,sans-serif;
+    COLOR: black;
+    background-color: #EBEBEB;
+    font-size: 14px;
+    FONT-WEIGHT: normal;
+    PADDING-BOTTOM: 3px;
+    PADDING-LEFT: 5px;
+    PADDING-RIGHT: 0px;
+    PADDING-TOP: 5px;
+    BORDER-BOTTOM: #ccff99 0px inset;
+    BORDER-BOTTOM: white 2px solid;
+    BORDER-LEFT: #c9cccd 2px inset;
+    BORDER-RIGHT: #c9cccd 2px inset;
+    BORDER-TOP: red 2px;
+    height: 30px;
+    background-image: url(/LUEqm/images/PagerBorder1.gif);
+    background-position: left top;
+    background-repeat:repeat-x;
+}
+
+.Snippets 
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; BORDER-LEFT: #999999 1px solid; BORDER-BOTTOM: #999999 1px solid; BACKGROUND-COLOR: #f1f1f1;
+}
+
+.panelRightBorder {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 0px solid; BORDER-LEFT: #999999 0px solid; BORDER-BOTTOM: #999999 0px solid; BACKGROUND-COLOR: #f1f1f1
+}
+
+.panelBorder {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 0px solid; BORDER-LEFT: #999999 0px solid; BORDER-BOTTOM: #999999 1px solid; BACKGROUND-COLOR: transparent
+}
+
+/* menu */
+.flyoutMenu {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 0px solid; BEHAVIOR: url(/Portal/Lib/menus.htc); BORDER-LEFT: #999999 0px solid; BORDER-BOTTOM: #999999 1px solid; BACKGROUND-COLOR: #f1f1f1
+}
+.flyoutHeading {
+	PADDING-LEFT: 2px; FONT-WEIGHT: bold; FONT-SIZE: 70%; PADDING-BOTTOM: 4px; CURSOR: default; PADDING-TOP: 2px; FONT-FAMILY: Verdana, Arial, Helvetica; BACKGROUND-COLOR: #f1f1f1
+}
+.flyoutLink {
+	BORDER-RIGHT: #f1f1f1 1px solid; PADDING-RIGHT: 25px; BORDER-TOP: #f1f1f1 1px solid; PADDING-LEFT: 6px; FONT-SIZE: 70%; BORDER-LEFT: #f1f1f1 1px solid; CURSOR: hand; PADDING-TOP: 1px; BORDER-BOTTOM: #f1f1f1 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica
+}
+.flyoutMenu TD.flyoutLink {
+	BORDER-RIGHT: #f1f1f1 1px solid; PADDING-RIGHT: 25px; BORDER-TOP: #f1f1f1 1px solid; PADDING-LEFT: 6px; FONT-SIZE: 70%; PADDING-BOTTOM: 3px; BORDER-LEFT: #f1f1f1 1px solid; CURSOR: hand; PADDING-TOP: 1px; BORDER-BOTTOM: #f1f1f1 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica
+}
+.flyoutLink A {
+	COLOR: black; TEXT-DECORATION: none
+}
+.flyoutLink A:hover {
+	COLOR: black; TEXT-DECORATION: none
+}
+.flyoutLink A:visited {
+	COLOR: black; TEXT-DECORATION: none
+}
+.flyoutLink A:active {
+	COLOR: black; TEXT-DECORATION: none
+}
+.flyoutSubHeading {
+	PADDING-LEFT: 7px; FONT-WEIGHT: bold; FONT-SIZE: 70%; PADDING-BOTTOM: 4px; CURSOR: default; PADDING-TOP: 2px; FONT-FAMILY: Verdana, Arial, Helvetica; BACKGROUND-COLOR: #f1f1f1
+}
+.flyoutSubLink {
+	BORDER-RIGHT: #f1f1f1 1px solid; PADDING-RIGHT: 15px; BORDER-TOP: #f1f1f1 1px solid; PADDING-LEFT: 11px; FONT-SIZE: 70%; PADDING-BOTTOM: 3px; BORDER-LEFT: #f1f1f1 1px solid; CURSOR: hand; PADDING-TOP: 1px; BORDER-BOTTOM: #f1f1f1 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica
+}
+.flyoutSubLink A {
+	COLOR: black; TEXT-DECORATION: none
+}
+.flyoutSubLink A:hover {
+	COLOR: black; TEXT-DECORATION: none
+}
+.flyoutSubLink A:visited {
+	COLOR: black; TEXT-DECORATION: none
+}
+.flyoutSubLink A:active {
+	COLOR: black; TEXT-DECORATION: none
+}
+
+/* code */
+.cs {
+	FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: Verdana, Geneva
+}
+
+TABLE.border
+{
+	/*border-top: #8199B8 1px solid;*/
+	width: 100%;
+	background-color: white;
+}
+
+TABLE.outer
+{
+	background-color: white;
+	width: 100%;
+}
+
+.outerPadding
+{
+	/*background-color: #8199B8; */
+	height: 0px;
+	visibility:hidden;
+}
+
+TD.outer
+{
+	/*background-color: #e4e4e4; */
+	width: 100%;
+}
+
+
+.mouseon
+{
+    BACKGROUND: #B6C3D0;
+    BACKGROUND: #D5DBE3;
+    background: #C2C5C8;
+    CURSOR: hand;
+	height:25px;
+}
+.mouseoff
+{
+    COLOR: #000000;
+}
+.dbgrid
+{
+	border-color:Teal;	
+	border-top-color: White;
+	background-color:#FCFCF7;
+	font-size :10pt;
+    font-weight: normal;
+    font-family: Helvetica, sans-serif, Times New Roman;
+    width:100%;
+	height:25px;	
+}
+
+.gridHead
+{
+	border-color: White;
+	font-weight: bold;
+	color: White;
+	background-color:#828A92;
+	height:25px;
+	vertical-align: sub;
+    font-family: Verdana,sans-serif;
+}
+
+.gridItem
+{
+	background-color:#FCFCF7;
+	height:25px;
+    CURSOR:default
+}
+.gridAlter
+{
+	background-color:#F0F0F0;
+	height:25px;
+    CURSOR:default	
+}
+.gridSelect
+{
+	cursor:hand
+}
+
+
+.fontSizeTitie {
+	FONT-SIZE: 14pt;
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color:#525456;
+	font-weight:bold
+}
+.HR
+{
+	border-bottom-color:#cccccc;
+	border-bottom-width: 2pt;
+/*	width:100%; 
+	height: 2pt ;
+	color:*/
+}
+.HR1
+{
+	width:100%; 
+	height: 1pt ;
+	color:#cccccc;
+	vertical-align: super;
+}
+
+.Summary
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  14px;
+    font-weight:    bold;
+    color: #710000;
+}
+.PageMenuBarLeft
+{
+	BACKGROUND-IMAGE: url(/LUEqm/images/menubarBg2.gif); 
+	background-position: left top;
+	BACKGROUND-REPEAT: no-repeat; 
+	border-top:solid 0px #8596ca;
+	width:55px;
+}
+
+.PageMenuBar
+{
+	PADDING-RIGHT: 0.9em; 
+	PADDING-LEFT: 0.9em; 
+	FONT-SIZE: 100%; 
+	MARGIN-BOTTOM: 0.0em; 
+	PADDING-BOTTOM: 0.1em; 
+	MARGIN-LEFT: -1em; 
+	COLOR: #003380; 
+	MARGIN-RIGHT: -1em; 
+	PADDING-TOP: -1em; 
+	BORDER-BOTTOM: #8596ca 1px solid; 
+	BORDER-BOTTOM: #8596ca 0px solid; 
+	border-top:solid 0px blue;
+	BACKGROUND-COLOR: #a1c0df;
+	BACKGROUND-COLOR: #5484b0;
+	text-align: right;
+}
+
+.PageMenuItem, .PageMenuItem a 
+{
+  BACKGROUND-COLOR: #5484b0;
+  color:white; 
+  font-family:verdana; 
+  font-size:9px; 
+  font-weight: bold;
+  padding:3px;
+  padding-left:5px;
+  padding-right:5px;
+  border:0px; 
+  border-color:silver; 
+  border-style:solid; 
+  border-top-color:gainsboro; 
+  border-left-color:silver; 
+  border-right-color:black;   
+  cursor:default;
+  text-decoration: none;
+}
+
+ .PagemenuSeparator, .PagemenuSeparator a 
+{ 
+	font-family: verdana, geneva, helvetica;
+    font-size:9px; 
+    font-weight:bold;
+	color: #FFF;
+    padding:3px;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.PageMenuItemOver
+{
+  BACKGROUND-COLOR: #5484b0;
+  color:white; 
+  font-family:verdana; 
+  font-size:9px; 
+  padding:3px;
+  padding-left:5px;
+  padding-right:5px;
+  border:1px; 
+  border-color:gray; 
+  border-style:solid; 
+  border-top-color:gainsboro; 
+  border-left-color:gray; 
+  border-right-color:black;   
+  cursor:default;
+}
+
+A.PageMenuItem:active   {
+    text-decoration:    none;
+    /*color:#eeeeee;*/
+}
+A.PageMenuItem:hover   {
+    text-decoration:    none;
+    color: #FC6;
+    /*color:#eeeeee;*/
+}
+
+.MenuDetail {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 15px; BORDER-TOP: gainsboro 1px solid; PADDING-LEFT: 15px; FONT-SIZE: 9px; PADDING-BOTTOM: 3px; BORDER-LEFT: silver 1px solid; CURSOR: default; COLOR: navy; PADDING-TOP: 3px; BORDER-BOTTOM: silver 1px solid; FONT-FAMILY: verdana; BACKGROUND-COLOR: gainsboro
+}
+
+.MenuDetailOver {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 15px; BORDER-TOP: gainsboro 1px solid; PADDING-LEFT: 15px; FONT-SIZE: 9px; PADDING-BOTTOM: 3px; BORDER-LEFT: gray 1px solid; CURSOR: default; COLOR: white; PADDING-TOP: 3px; BORDER-BOTTOM: gray 1px solid; FONT-FAMILY: verdana; BACKGROUND-COLOR: darkgray
+}
+
+.TopMenuGroup
+{
+	padding:0px 0px 0px 0px;
+	border-width: 0px;
+	border-style:none;
+}
+
+.ErrorMessage
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: red;
+    background-color: '#9CC1AF';
+    background-color: '#A2C4AE';
+    text-align: left;
+	background-image: url(/LUEqm/images/ErrorGradient.gif);
+	background-repeat: repeat-y;
+	background-position: left top;
+	padding-right: 20px;
+	width: 100%;
+}
+
+.ShadowLine
+{
+	background-image: url(/LUEqm/images/Shadow.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+	height: 7px;
+}
+
+.tooltip {
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:2;
+	width: 200;
+	visibility:hidden;
+	font: tahoma,arial,sans-serif,;
+	background-color:#ffffe6;
+	padding:10px 10px;
+	border: 1px solid black;
+	}
+.tooltip2
+ {
+	BACKGROUND-COLOR: #ffffff; 
+	BORDER-LEFT: black 1px solid; 
+	BORDER-RIGHT: black 1px solid; 
+	BORDER-TOP: black 1px solid; 
+	BORDER-BOTTOM: black 1px solid; 
+	FONT: 10pt MS Comic Sans,arial,sans-serif; LEFT: 0px; 
+	PADDING-LEFT: 1px; 
+	PADDING-RIGHT: 1px; 
+	PADDING-TOP: 1px;
+	POSITION: absolute; 
+	TOP: 0px; VISIBILITY: hidden; 
+	Z-INDEX: 2
+	}
+
+.ModuleTitleSpan {
+    font-family: Verdana Bold, 'Trebuchet MS', Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    /*color:#cccc99;
+    /*color: #8B46D7;  */
+	position: absolute;
+	top: 82px;
+	left: 0px;
+	height: 26px;
+	/*width: 300px;
+    color: White;*/
+    text-align: left;
+    vertical-align: baseline;
+	z-index: 0;
+	visibility: hidden;
+}
+
+/* Module Title */
+.ModuleTitleLeft
+{
+	color: white;
+	background-color: #70BC1F;
+	background-color: #CADD96;
+	background-color: #F7F7D6;
+	background-color: #DBE1C5;
+	background-color: Transparent;
+    width: 5px;
+	background-position: right top;
+	/*
+	background-repeat: no-repeat;
+	background-image: url(../images/TitleLeftTab3.gif);
+	*/
+}
+
+.ModuleTitleRight
+{
+	color: white;
+	background-color: #70BC1F;
+	background-color: #CADD96;
+	background-color: #F7F7D6;
+	background-color: #DBE1C5;
+	background-color: Transparent;
+	width: 22px;
+	background-image: url(/LUEqm/images/TitleRightTab1.gif);
+	background-image: url(/LUEqm/images/OfficeCube.gif);
+	background-repeat: no-repeat;
+}
+
+.ModuleTitle
+{
+	FONT-SIZE: 12pt;
+	height: 26px;
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: Black;
+	font-weight:bold;
+	/*background-image: url(../images/TitleBGTab3.gif); */
+	background-color: #70BC1F;
+	background-color: #CADD96;
+	background-color: #F7F7D6;
+	background-color: #DBE1C5;
+	background-color: Transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+	background-repeat: repeat-x;
+	background-position: top left;
+}
+
+.ModuleTitleDescription
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height:normal;
+    padding-left: 15px;
+}
+
+/*AutoComplete flyout */
+
+.autocomplete_completionListElement 
+{  
+	visibility : hidden;
+	margin : 0px!important;
+	background-color : inherit;
+	color : windowtext;
+	border : buttonshadow;
+	border-width : 1px;
+	border-style : solid;
+	cursor : 'default';
+	overflow : auto;
+	height : 200px;
+    text-align : left; 
+    list-style-type : none;
+}
+
+/* AutoComplete highlighted item */
+
+.autocomplete_highlightedListItem
+{
+	background-color: #ffff99;
+	color: black;
+	padding: 1px;
+}
+
+/* AutoComplete item */
+
+.autocomplete_listItem 
+{
+	background-color : window;
+	color : windowtext;
+	padding : 1px;
+}
+
+.demoheading {
+	padding-bottom:20px;
+	color:#5377A9;
+	font-family:Arial, Sans-Serif;
+	font-weight:bold;
+	font-size:1.5em;
+}
+
+/*Popup Control*/
+.popupControl{
+	background-color:White;
+	position:absolute;
+	visibility:hidden;
+}

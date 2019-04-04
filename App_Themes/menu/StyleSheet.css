@@ -1,0 +1,95 @@
+﻿body {
+}
+/* -------- START MENU ---------- */
+/* level 1 menu body */
+.MainMenu
+{
+	background-color: transparent;
+	font-size: 10pt;
+	
+}
+
+/* level 1 menu links */
+.MainMenuTopLinks
+{
+	background-color: transparent;
+	font-size: 10pt;
+	padding: 2px 5px 2px 5px;
+	text-align: center;
+	color: #F7F7F7;
+	
+}
+
+.MainMenuTopLinks:link
+{
+	background-color: transparent;
+	font-size: 10pt;
+	padding: 2px 5px 2px 5px;
+	text-align: center;
+	color: #F7F7F7;
+	text-decoration: none;
+	
+}
+
+.MainMenuTopLinks:Visited
+{
+	background-color: transparent;
+	font-size: 10pt;
+	padding: 2px 5px 2px 5px;
+	text-align: center;
+	color: #F7F7F7;
+	text-decoration: none;
+	
+}
+
+.MainMenuTopLinks:Hover
+{
+	background-color: #738294;
+	font-size: 10pt;
+	padding: 2px 5px 2px 5px;
+	text-align: center;
+	color: #DEDFDE;
+	text-decoration: none;
+	border: solid 1px #F7F7F7;
+}
+
+/* level 2 menu body */
+.MainMenuSub
+{
+	background-color: Silver;
+	border: outset 2px gray;
+	font-size: 10pt;
+	text-align: left;
+	vertical-align:middle ;
+}
+
+/* level 2 menu links */
+.MainMenuSubLinks
+{
+	background-color: Silver;
+	font-size: 10pt;
+	text-decoration: none;
+	padding: 2px 5px 4px 5px;
+	cursor: hand;
+	color: Black;
+	text-align: left;
+	vertical-align:middle ;
+}
+
+.MainMenuSubLinks:link
+{
+	text-decoration: none;
+	color: Black;
+}
+
+.MainMenuSubLinks:Visited
+{
+	text-decoration: none;
+	color: Black;
+}
+
+.MainMenuSubLinks:Hover
+{
+	text-decoration: underline;
+	color: Black;
+}

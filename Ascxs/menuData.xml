@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="gb2312" ?> 
+<MenuData 
+  DefaultItemSpacing="1"
+  DefaultGroupCssClass="MenuGroup"
+  DefaultItemCssClass="MenuItem" 
+  DefaultItemCssClassOver="MenuItemOver" 
+  DefaultItemCssClassDown="MenuItemDown" 
+  DefaultItemChildExpandedCssClass="MenuItemExpanded" 
+> 
+  <MenuGroup>
+	<MenuItem Label="主页" URL="/Index.Aspx" NoWrap="true" Height="23" />
+    <MenuItem Label="系统管理" NoWrap="true" Height="23">
+      <MenuGroup>
+        <MenuItem Label="权限管理" URL="PrivilMng.Aspx" NoWrap="true"/>
+        <MenuItem Label="用户管理" URL="UserMng.Aspx" NoWrap="true"/>
+        <MenuItem Label="修改密码" URL="UserPswd.Aspx" NoWrap="true"/>
+      </MenuGroup>
+    </MenuItem>
+
+    <MenuItem Label="销售" NoWrap="true" Height="23">
+      <MenuGroup>
+       
+        <MenuItem Label="客户开发总表查询" URL="MainCustomerQuery.Aspx" NoWrap="true"/>
+       
+        <MenuItem Label="联系人" URL="CarInfoMng.Aspx" NoWrap="true"/>
+      
+      </MenuGroup>
+    </MenuItem>
+
+    <MenuItem Label="文件发放" NoWrap="true" Height="23">
+      <MenuGroup>
+        <MenuItem Label="质量管理" URL="DeptMng.Aspx" NoWrap="true"/>
+        <MenuItem Label="产品文件" URL="CarInfoMng.Aspx" NoWrap="true"/>
+
+      </MenuGroup>
+    </MenuItem>
+    
+    <MenuItem Label="人事" NoWrap="true" Height="23">
+      <MenuGroup>
+        <MenuItem Label="请假查询" URL="DeptMng.Aspx" NoWrap="true"/>
+       
+      </MenuGroup>
+    </MenuItem>
+
+    <MenuItem Label="物流" NoWrap="true" Height="23">
+      <MenuGroup>
+        <MenuItem Label="物流报告" URL="CarApply.Aspx" NoWrap="true"/>
+       
+      </MenuGroup>
+    </MenuItem>
+
+  <MenuItem Label="数据统计" NoWrap="true" Height="23">
+    <MenuGroup>
+      <MenuItem Label="我的用车申请" URL="MyCarApply.Aspx" NoWrap="true"/>
+      <MenuItem Label="待我审批的申请" URL="MyCarCheck.Aspx" NoWrap="true"/>
+      <MenuItem Label="我的出车任务" URL="MyCarTask.Aspx" NoWrap="true"/>
+    </MenuGroup>
+  </MenuItem>
+  <MenuItem Label="事务提醒" NoWrap="true" Height="23"/>
+  <MenuItem Label="退出" URL="javascript:Quit()" NoWrap="true" Height="23" />
+  <MenuItem Label=" " Width="100%" CssClassOver="aspnmI" Height="23" />
+  
+  </MenuGroup> 
+</MenuData> 
+

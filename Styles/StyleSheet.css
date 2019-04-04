@@ -1,0 +1,25 @@
+﻿
+.GridViewCssClass TD INPUT.NumberInput {
+	text-align: right;
+	font-size: 1em;
+	border: 1px solid black;
+	margin: -2px 0px -5px 0px;
+	
+
+}
+.GridViewCssClass TD INPUT.Normal {
+	text-align: left;
+	font-size: 1em;
+	border: 1px solid black;
+	margin: -2px 0px -5px 0px;
+	
+
+}
+.GridViewCssClass TD INPUT.active {
+	text-align: left;
+	font-size: 1em;
+	border: 0px ;
+	
+	
+
+}

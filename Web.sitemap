@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+
+
+
+  <siteMapNode>
+
+    <siteMapNode url =" ~/Source1/index.aspx" title ="首页">
+
+
+
+      <siteMapNode  url=" ~/My_Car.aspx" title="我的领料车"  description="">   
+      </siteMapNode>
+
+     
+
+
+      <siteMapNode  url=" ~/LL_Query.aspx" title="领料"  description="">
+
+      </siteMapNode>
+      <siteMapNode  url=" ~/LL_Record.aspx" title="我的领料记录"  description="">
+
+      </siteMapNode>
+      <siteMapNode  url=" ~/LL_Confirm.aspx" title="领用人确认"  description="">
+
+      </siteMapNode>
+      <siteMapNode  url=" ~/WH_Confirm.aspx" title="仓库查询"  description="">
+
+      </siteMapNode>
+      <siteMapNode  url=" ~/TL_Query.aspx" title="退料"  description="">
+
+      </siteMapNode>
+      <siteMapNode  url=" ~/TL_Record.aspx" title="我的退料记录"  description="">
+
+      </siteMapNode>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </siteMapNode>
+  </siteMapNode >
+</siteMap>
