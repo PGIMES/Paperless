@@ -591,7 +591,7 @@
 				 <td class="style6"> 
                      <asp:GridView ID="GridView1" runat="server"  
                          AutoGenerateColumns="False" CssClass="GridViewCssClass" 
-                         Width="1350px" Height="70px" 
+                         Width="1370px" Height="70px" 
                          onpageindexchanging="GridView1_PageIndexChanging" PageSize="200"  BorderWidth=1
                          onrowdatabound="GridView1_RowDataBound" 
                          onrowcreated="GridView1_RowCreated">
@@ -703,10 +703,10 @@
                              </asp:TemplateField>
                              <asp:TemplateField HeaderText="领用位置">
                                  <ItemTemplate>
-                                     <asp:DropDownList ID="ddlposition" runat="server" Width="80px">
+                                     <asp:DropDownList ID="ddlposition" runat="server" Width="100px">
                                      </asp:DropDownList>
                                  </ItemTemplate>
-                                 <HeaderStyle Width="80px" />
+                                 <HeaderStyle Width="100px" />
                              </asp:TemplateField>
                              <asp:TemplateField HeaderText="领用原因">
                                  <ItemTemplate>

@@ -1412,7 +1412,7 @@ public partial class My_Car : System.Web.UI.Page
                 if (ddlposition != null)
                 {
                     ddlposition.DataSource = api;
-                    ddlposition.DataTextField = "mo_code_key";
+                    ddlposition.DataTextField = "mo_code_name";
                     ddlposition.DataValueField = "mo_code_key";
                     ddlposition.DataBind();
                     ddlposition.Items.Insert(0, new ListItem("请选择", ""));
@@ -1559,17 +1559,16 @@ public partial class My_Car : System.Web.UI.Page
         DropDownList ddlcode = (DropDownList)sender;
         GridViewRow gvr = (GridViewRow)ddlcode.NamingContainer;
         int index = gvr.RowIndex;
-        string comp = GridView1.Rows[index].Cells[16].Text.ToString().TrimEnd();
         DropDownList code = (DropDownList)gvr.FindControl("ddlcode");
         DropDownList postion = (DropDownList)gvr.FindControl("ddlposition");
         TextBox txt_gdh = (TextBox)gvr.FindControl("txt_gdh0");
         DataTable dt = new DataTable();
 
-        dt = DJ.Get_MO_Code(5, "", comp, "");
+        dt = DJ.Get_MO_Code(1, "", viscomp.Text, "");
 
         if (ddlcode.SelectedValue == "设备部自动化项目配件领用")
         {
-            var sql = string.Format(" select xmbh as mo_code_key ,xmbh as mo_code_name from [172.16.5.8].ecology.dbo.formtable_main_55_zdhxm order by xmbh");
+            var sql = string.Format(" select xmbh as mo_code_key,xmbh+'('+xmms+')' as mo_code_name from [172.16.5.8].ecology.dbo.formtable_main_55_zdhxm order by xmbh");
             DataTable dt_2 = SQLHelper.reDs(sql).Tables[0];
 
             foreach (DataRow dr in dt_2.Rows)
