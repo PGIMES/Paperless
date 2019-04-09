@@ -507,7 +507,7 @@ public class Car
         return SQLHelper.GetDataTable("usp_DJList_ReportQuery", param);
     }
 
-
+    /*
     public DataTable usp_Keyin_gdh( string uid, string gdh)
     {
         SqlParameter[] param = new SqlParameter[]
@@ -518,6 +518,19 @@ public class Car
              
      
            
+        };
+        return SQLHelper.GetDataTable("usp_Keyin_gdh", param);
+    }*/
+
+    public DataTable usp_Keyin_gdh(string uid, string gdh, string code, string dj_positon)
+    {
+        SqlParameter[] param = new SqlParameter[]
+        {
+
+             new SqlParameter("@uid",uid),
+             new SqlParameter("@gdh",gdh),
+             new SqlParameter("@code",code),
+             new SqlParameter("@dj_positon",dj_positon)
         };
         return SQLHelper.GetDataTable("usp_Keyin_gdh", param);
     }

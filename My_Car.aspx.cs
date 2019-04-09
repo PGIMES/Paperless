@@ -1014,8 +1014,9 @@ public partial class My_Car : System.Web.UI.Page
                 //机床备件类工单号必须填写
                 if (DropDownList2.SelectedItem.Text == "辅料-机床备件类")
                 {
+                    //DataTable gdlist = Car.usp_Keyin_gdh(Session["UserLoginName"].ToString(), gdh);
+                    DataTable gdlist = Car.usp_Keyin_gdh(Session["UserLoginName"].ToString(), gdh, code, dj_positon);
 
-                    DataTable gdlist = Car.usp_Keyin_gdh(Session["UserLoginName"].ToString(), gdh);
                     string Iskeyin = gdlist.Rows[0][0].ToString();
                     string isgdh = gdlist.Rows[0][1].ToString();
                     if (Iskeyin == "N" || isgdh == "N")
@@ -1515,6 +1516,8 @@ public partial class My_Car : System.Web.UI.Page
             ((CheckBox)GridView2.Rows[i].FindControl("chkSelect")).Checked = flag;
         }  
     }
+
+    /*
     protected void ddlcode_SelectedIndexChanged(object sender, EventArgs e)
     {
         DropDownList ddlcode = (DropDownList)sender;
@@ -1525,6 +1528,7 @@ public partial class My_Car : System.Web.UI.Page
         DropDownList postion = (DropDownList)gvr.FindControl("ddlposition");
         TextBox txt_gdh = (TextBox)gvr.FindControl("txt_gdh0");
         DataTable dt = new DataTable();
+
         if (ddlcode.SelectedValue == "设备部自动化项目配件领用")
         {
             var sql = string.Format(" select xmbh as mo_code_key ,xmbh+xmms as mo_code_name from [172.16.5.8].ecology.dbo.formtable_main_55_zdhxm");
@@ -1532,22 +1536,65 @@ public partial class My_Car : System.Web.UI.Page
         }
         else
         {
-           dt= DJ.Get_MO_Code(5, "", comp, "");
-           var sqlstr = string.Format(" select wo_key,mo_code_key from [172.16.5.26].api.dbo.Work_Order_Ongoing where wo_key='" + txt_gdh.Text + "'");
-           DataTable sb_dt = SQLHelper.reDs(sqlstr).Tables[0];
-           if (sb_dt.Rows.Count > 0)
-           {
-               string sbcode = SQLHelper.reDs(sqlstr).Tables[0].Rows[0][1].ToString();
-               postion.SelectedValue = sbcode;
-           }
+            dt = DJ.Get_MO_Code(5, "", comp, "");
+            var sqlstr = string.Format(" select wo_key,mo_code_key from [172.16.5.26].api.dbo.Work_Order_Ongoing where wo_key='" + txt_gdh.Text + "'");
+            DataTable sb_dt = SQLHelper.reDs(sqlstr).Tables[0];
+            if (sb_dt.Rows.Count > 0)
+            {
+                string sbcode = SQLHelper.reDs(sqlstr).Tables[0].Rows[0][1].ToString();
+                postion.SelectedValue = sbcode;
+            }
         }
+
+        postion.DataSource = dt;
+        postion.DataTextField = "mo_code_name";
+        postion.DataValueField = "mo_code_key";
+        postion.DataBind();
+        postion.Items.Insert(0, new ListItem("请选择", ""));
+
+    }
+    */
+    protected void ddlcode_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        DropDownList ddlcode = (DropDownList)sender;
+        GridViewRow gvr = (GridViewRow)ddlcode.NamingContainer;
+        int index = gvr.RowIndex;
+        string comp = GridView1.Rows[index].Cells[16].Text.ToString().TrimEnd();
+        DropDownList code = (DropDownList)gvr.FindControl("ddlcode");
+        DropDownList postion = (DropDownList)gvr.FindControl("ddlposition");
+        TextBox txt_gdh = (TextBox)gvr.FindControl("txt_gdh0");
+        DataTable dt = new DataTable();
+
+        dt = DJ.Get_MO_Code(5, "", comp, "");
+
+        if (ddlcode.SelectedValue == "设备部自动化项目配件领用")
+        {
+            var sql = string.Format(" select xmbh as mo_code_key ,xmbh as mo_code_name from [172.16.5.8].ecology.dbo.formtable_main_55_zdhxm order by xmbh");
+            DataTable dt_2 = SQLHelper.reDs(sql).Tables[0];
+
+            foreach (DataRow dr in dt_2.Rows)
+            {
+                dt.ImportRow(dr);
+            }
+        }
+        else
+        {
+            var sqlstr = string.Format(" select wo_key,mo_code_key from [172.16.5.26].api.dbo.Work_Order_Ongoing where wo_key='" + txt_gdh.Text + "'");
+            DataTable sb_dt = SQLHelper.reDs(sqlstr).Tables[0];
+            if (sb_dt.Rows.Count > 0)
+            {
+                string sbcode = SQLHelper.reDs(sqlstr).Tables[0].Rows[0][1].ToString();
+                postion.SelectedValue = sbcode;
+            }
+        }   
+
         postion.DataSource = dt;
         postion.DataTextField = "mo_code_name";
         postion.DataValueField = "mo_code_key";
         postion.DataBind();
         postion.Items.Insert(0, new ListItem("请选择", ""));
       
-    }
+    }   
 
     protected void txt_gdh0_TextChanged(object sender, EventArgs e)
     {

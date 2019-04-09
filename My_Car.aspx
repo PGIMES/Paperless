@@ -734,10 +734,10 @@
                              <asp:TemplateField HeaderText="移动代码">
                                  <ItemTemplate>
                                      <asp:DropDownList ID="ddlcode" runat="server" Width="100px" 
-                                         
+                                         AutoPostBack="True" 
+                                         onselectedindexchanged="ddlcode_SelectedIndexChanged"
                                          >
-                                     </asp:DropDownList><%--AutoPostBack="True" 
-                                         onselectedindexchanged="ddlcode_SelectedIndexChanged"--%>
+                                     </asp:DropDownList><%----%>
                                   <%--   <dx:ASPxComboBox ID="ddl_mcode" runat="server" ValueType="System.String"  Width="80px"
                                       ClientInstanceName='<%# "ddl_mcode"+Container.DataItemIndex.ToString() %>'>
                                      </dx:ASPxComboBox>--%>
