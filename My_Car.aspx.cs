@@ -1063,7 +1063,7 @@ public partial class My_Car : System.Web.UI.Page
                 {
                     if (remark == "" || type == "" || code == "" || selxmh.Text == "")//ddl_lycode=="" || //20190517 注释
                     {
-                        lbs_Message_sb.Text = "项目号、领用位置、领用类型、移动代码和领用原因必须填写!";
+                        lbs_Message_sb.Text = "项目号、领用位置、领用类型、移动代码必须填写!";//和领用原因
                         return;
                     }
                     if (remark == "其它" || remark == "仓库调整")
