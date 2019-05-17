@@ -962,7 +962,7 @@ public partial class My_Car : System.Web.UI.Page
                 TextBox txtdlr = (TextBox)GridView1.Rows[i].FindControl("txt_dlr_sb");//领料代理人
                 TextBox txtsbpos = (TextBox)GridView1.Rows[i].FindControl("txt_sbpos");//设备位置
                 TextBox txtmjno = (TextBox)GridView1.Rows[i].FindControl("txt_mojuno");//模具号
-                TextBox lydesc = (TextBox)GridView1.Rows[i].FindControl("txt_lycode");//领用原因-其他
+                TextBox lydesc = (TextBox)GridView1.Rows[i].FindControl("txt_lycode");//领用原因-其他--其他调整
                 ASPxComboBox selxmh = (ASPxComboBox)GridView1.Rows[i].FindControl("xmh_select");//项目号
                 ASPxTextBox yfxm = (ASPxTextBox)GridView1.Rows[i].FindControl("txt_yfxm");//研发项目
                 ASPxTextBox pt_status = (ASPxTextBox)GridView1.Rows[i].FindControl("txt_status");//项目状态
@@ -1061,7 +1061,7 @@ public partial class My_Car : System.Web.UI.Page
                 }
                 else if (DropDownList2.SelectedItem.Text == "辅料-刀具辅件类")
                 {
-                    if (remark == "" || type == "" || code == "" || ddl_lycode=="" || selxmh.Text == "")
+                    if (remark == "" || type == "" || code == "" || selxmh.Text == "")//ddl_lycode=="" || //20190517 注释
                     {
                         lbs_Message_sb.Text = "项目号、领用位置、领用类型、移动代码和领用原因必须填写!";
                         return;
