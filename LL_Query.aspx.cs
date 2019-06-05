@@ -125,8 +125,8 @@ public partial class LL_Query : System.Web.UI.Page
         //取已签核完成的PO单料号和物料类型(刀具类)  paperless_NoMaterial_Qty记录已经领用的数量
         string sqlstr = @"select qad_pono+'_'+cast(po_dtl.rowid as varchar) as wlh,wlmc,wlms,substring(wltype,1,charindex('-',wltype)-1)line,isnull(rec_Quantity,0)rec_Quantity
                                       from [172.16.5.26].mes.dbo.PUR_PO_Dtl_Form  po_dtl join [172.16.5.26].mes.dbo.PUR_PR_Dtl_Form pr_dtl on  po_dtl.PRNo=pr_dtl.PRNo and po_dtl.PRRowId=pr_dtl.rowid
-                                     left join paperless_NoMaterial_Qty  nom on PONo+cast(po_dtl.rowid as varchar)=nom.part
-                                      where  isnull(wlh,'')='无' and  substring(wltype,1,charindex('-',wltype)-1)='" +djtype+"'   and charindex('-',wltype)>0 ";
+                                     left join paperless_NoMaterial_Qty  nom on qad_pono+'_'+cast(po_dtl.rowid as varchar)=nom.part
+                                      where  isnull(wlh,'')='无' and  substring(wltype,1,charindex('-',wltype)-1)='" + djtype + "'   and charindex('-',wltype)>0 and flag_qad='是' ";
         DataTable xt_dt = SQLHelper.reDs(sqlstr.ToString()).Tables[0];
         try
         {
