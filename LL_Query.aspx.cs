@@ -152,27 +152,27 @@ public partial class LL_Query : System.Web.UI.Page
             List<int> lstbRowsIndex = new List<int>();
             foreach (DataRow rowa in xt_dt.Rows)
             {
-                bool matchFlag = false;
+                //bool matchFlag = false;
                 for (int i = 0; i < qad_dt.Rows.Count; i++)
                 {
                     if (lstbRowsIndex.Contains(i)) continue;
 
                     DataRow rowb = qad_dt.Rows[i];
                     //以物料号作为合并的比较项
-                    if (rowa["wlh"].ToString() == rowb["pt_part"].ToString())
+                    if (rowa["wlh"].ToString() == rowb["pt_part"].ToString() && (int.Parse(rowb["ld_qty_oh"].ToString()) - int.Parse(rowa["rec_Quantity"].ToString()))>0)
                     {
                         lstbRowsIndex.Add(i);
                         //part在两表中都存在时
                         NewTable.Rows.Add(rowa["wlh"], rowa["wlmc"], rowa["wlms"], "EA", int.Parse(rowb["ld_qty_oh"].ToString()) - int.Parse(rowa["rec_Quantity"].ToString()), rowb["pod_site"], 0, "");
-                        matchFlag = true;
+                        //matchFlag = true;
                         break;
                     }
                 }
 
-                if (!matchFlag)
-                {//采购订单状态中不存在时，默认收货数量为0
-                    NewTable.Rows.Add(rowa["wlh"], rowa["wlmc"], rowa["wlms"], "EA", 0,DropDownList3.SelectedValue, 0, "");
-                }
+                //if (!matchFlag)
+                //{//采购订单状态中不存在时，默认收货数量为0
+                //    NewTable.Rows.Add(rowa["wlh"], rowa["wlmc"], rowa["wlms"], "EA", 0,DropDownList3.SelectedValue, 0, "");
+                //}
             }
      
            
@@ -181,6 +181,8 @@ public partial class LL_Query : System.Web.UI.Page
         catch (Exception error)
         {
         }
+       
+
         return NewTable;
     }
 
