@@ -781,10 +781,16 @@ public partial class My_Car : System.Web.UI.Page
         NewTable.Columns.Add("loc", typeof(string));
 
         //取已签核完成的PO单料号和物料类型
-        string sqlstr = @"select qad_pono+'_'+cast(po_dtl.rowid as varchar) as wlh,wlmc,wlms,substring(wltype,1,charindex('-',wltype)-1)line,isnull(rec_Quantity,0)rec_Quantity
-                                      from [172.16.5.26].mes.dbo.PUR_PO_Dtl_Form  po_dtl join [172.16.5.26].mes.dbo.PUR_PR_Dtl_Form pr_dtl on  po_dtl.PRNo=pr_dtl.PRNo and po_dtl.PRRowId=pr_dtl.rowid
-                                     left join paperless_NoMaterial_Qty  nom on qad_pono+'_'+cast(po_dtl.rowid as varchar)=nom.part
-                                      where qad_pono+'_'+cast(po_dtl.rowid as varchar) ='" + wlbm + "'";
+        //string sqlstr = @"select qad_pono+'_'+cast(po_dtl.rowid as varchar) as wlh,wlmc,wlms,substring(wltype,1,charindex('-',wltype)-1)line,isnull(rec_Quantity,0)rec_Quantity
+        //                              from [172.16.5.26].mes.dbo.PUR_PO_Dtl_Form  po_dtl join [172.16.5.26].mes.dbo.PUR_PR_Dtl_Form pr_dtl on  po_dtl.PRNo=pr_dtl.PRNo and po_dtl.PRRowId=pr_dtl.rowid
+        //                             left join paperless_NoMaterial_Qty  nom on qad_pono+'_'+cast(po_dtl.rowid as varchar)=nom.part
+        //                              where qad_pono+'_'+cast(po_dtl.rowid as varchar) ='" + wlbm + "'";
+        string sqlstr = @"select qad_pono+'_'+cast(po_dtl.rowid as varchar) as wlh,wlmc,wlms
+                            ,case when charindex('-',wltype)>0 then substring(wltype,1,charindex('-',wltype)-1) else '4000' end line
+                            ,isnull(rec_Quantity,0)rec_Quantity
+                        from [172.16.5.26].mes.dbo.PUR_PO_Dtl_Form  po_dtl join [172.16.5.26].mes.dbo.PUR_PR_Dtl_Form pr_dtl on  po_dtl.PRNo=pr_dtl.PRNo and po_dtl.PRRowId=pr_dtl.rowid
+                        left join paperless_NoMaterial_Qty  nom on qad_pono+'_'+cast(po_dtl.rowid as varchar)=nom.part
+                        where qad_pono+'_'+cast(po_dtl.rowid as varchar) ='" + wlbm + "' and flag_qad='是'   and isnull(po_dtl.qad_pono,'')<>''";
         DataTable xt_dt = SQLHelper.reDs(sqlstr.ToString()).Tables[0];
         try
         {
