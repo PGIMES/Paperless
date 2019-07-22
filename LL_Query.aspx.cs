@@ -149,7 +149,8 @@ public partial class LL_Query : System.Web.UI.Page
             string IsSQL = @" select pod_part  as pt_part,pod_vpart as pt_desc1,pod_desc   as pt_desc2 ,cast(pod_qty_rcvd as int) as ld_qty_oh,
                                                  pod_site from pub.pod_det where pod_type='M'  
                                                  and pod_part like '%{0}%' and pod_site='{1}' and (pod_desc  like '%{2}%' OR pod_vpart like '%{2}%') ";
-            string sql_str = string.Format(IsSQL, txt_djzjbm.Text, DropDownList3.SelectedValue, txt_djzjgg.Text);
+            //string sql_str = string.Format(IsSQL, txt_djzjbm.Text, DropDownList3.SelectedValue, txt_djzjgg.Text);
+            string sql_str = string.Format(IsSQL,wlbm, DropDownList3.SelectedValue, wlgg);
             qad_dt = QAD_ODBC.Pub.GetODBCRows(sql_str);
 
             List<int> lstbRowsIndex = new List<int>();

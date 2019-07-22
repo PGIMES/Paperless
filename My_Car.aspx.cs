@@ -474,7 +474,7 @@ public partial class My_Car : System.Web.UI.Page
                  TextBox txtlycode = (TextBox)GridView2.Rows[i].FindControl("txt_ly_code");
                  TextBox yfcode = (TextBox)GridView2.Rows[i].FindControl("txtdj_yfxm");
                  TextBox status = (TextBox)GridView2.Rows[i].FindControl("txtdj_status");
-                 group_part = this.GridView2.Rows[i].Cells[1].Text.ToString().Replace("&nbsp;", "");
+                 group_part = this.GridView2.Rows[i].Cells[1].Text.ToString().Replace("&amp;nbsp;", "").Replace("&nbsp;", "");
                  part = this.GridView2.Rows[i].Cells[2].Text.ToString().Replace("&nbsp;", "");
                  desc1 = this.GridView2.Rows[i].Cells[3].Text.ToString();
                  desc2 = this.GridView2.Rows[i].Cells[4].Text.ToString();
@@ -1007,6 +1007,16 @@ public partial class My_Car : System.Web.UI.Page
                     lbs_Message_sb.Text = "领用数量大于实际库存量";
                     return;
                 }
+		//added by fish 19-07-18 08:46
+		//if (dj_positon == "" && selxmh.SelectedItem.Value=="") 
+                //{
+                 //   Response.Write("<script>javascript:alert('【领用位置】或【项目号】请选择一个不可同时为空，若无法对应，选择[全厂共用]！')</script>");
+                 //   return;
+                //}
+
+
+
+
                 //if (int.Parse(txtCount.Text) == 0)
                 //{
                 //    lbs_Message_sb.Text += "物料号：" + part + "领用数量不可为0!" + "</BR>";
@@ -1244,7 +1254,7 @@ public partial class My_Car : System.Web.UI.Page
         num = int.Parse(((TextBox)this.GridView2.Rows[lnindex].FindControl("txtCount")).Text);
         position = ((TextBox)this.GridView2.Rows[lnindex].FindControl("txt_position")).Text;
         comp = GridView2.Rows[lnindex].Cells[14].Text.ToString();
-         i = Car.update_llcnum(4, group_part.Replace("&nbsp;", ""), part, "", "", "", "", "", Session["UserLoginName"].ToString(), num, "", comp, 0, "", "", position, "");
+         i = Car.update_llcnum(4, group_part.Replace("&amp;nbsp;", "").Replace("&nbsp;", ""), part, "", "", "", "", "", Session["UserLoginName"].ToString(), num, "", comp, 0, "", "", position, "");
         //增加批量删除功能
         if (((CheckBox)this.GridView2.HeaderRow.FindControl("CheckAll")).Checked == true)
         {
@@ -1368,7 +1378,8 @@ public partial class My_Car : System.Web.UI.Page
                 string part = e.Row.Cells[1].Text.ToString();
                 string comp = e.Row.Cells[16].Text.ToString();
                 string dept = DJ.Get_MO_Code(2, uid, "", "").Rows[0][0].ToString();
-                DataTable dtcode = DJ.Get_MO_Code(3, uid, dept, part);
+               // DataTable dtcode = DJ.Get_MO_Code(3, uid, dept, part);
+                DataTable dtcode = SQLHelper.Query("exec usp_GetStock_Code '" + Session["UserLoginName"] + "','" + visdept.Text + "','" + part + "','" + viscomp.Text + "',''").Tables[0];
                 DataTable api = DJ.Get_MO_Code(1, "", viscomp.Text, "");
                 DataTable dtremark = DJ.Get_MO_Code(4, "", "", "");
 
